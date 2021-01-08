@@ -21,7 +21,6 @@ class Resource < ActiveRecord::Base
 
     def self.fresh_produce
         fresh_arr = self.all.select{|res| res.fresh}
-        # fresh_arr.pluck(:name)
     end
 
     def self.descriptions
